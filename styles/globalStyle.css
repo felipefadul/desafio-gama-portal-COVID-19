@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e6fff9;
+}
+
+header {
+  overflow: hidden;
+  background-color: #00cc99;
+  padding: 20px 10px;
+}
+
+header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+header a.logo {    
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+header a:hover {
+  background-color: #00b386;
+  color: white;
+}
+
+header a.active {
+  background-color: #009973;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+
+  header a.logo {
+    text-align: center;
+  }
+}
+
+#content {
+  margin: 2% 2% 0% 2%;
+}
+
+#presentation {
+  text-align: center;
+}
+
+#title h2{
+  font-size: 30px;
+  color: #009973;
+}
+
+#subtitle h2{
+  font-size: 20px;
+  color: #00cc99;
+}
+
+hr.rounded {
+  border-top: 5px solid #00cc99;
+  border-radius: 5px;
+}
+
+footer {
+  width: 100%;
+  background-color: #00cc99;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+footer a{
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:visited {
+  color: white;
+}
+
+footer a:link {
+  color: white;
+}
+
+footer h4 {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  #content {
+    margin-bottom: 5%;
+  }
+}

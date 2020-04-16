@@ -1,0 +1,91 @@
+article.article-card {
+  float: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: transform .2s;
+  background-color: white;
+}
+
+article.article-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+#news:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#news {
+  padding: 2% 15%;
+}
+
+.card {
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #00cc99;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+h3 {
+  text-align: justify;
+  padding-left: 2%;
+  padding-right: 2%;
+  color: rgb(81, 81, 81);
+}
+
+p {
+  text-align: justify;
+  padding-left: 2%;
+  padding-right: 2%;
+  color: rgb(91, 91, 91);
+}
+
+@media screen and (min-width: 801px) {
+  h3 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 17px;
+  }
+
+  article.article-card {
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  article.article-card {
+    width: 100%;
+    margin-top: 10%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
+
+  h3 {
+    font-size: 17px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
