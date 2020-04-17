@@ -1,0 +1,120 @@
+#about-me {
+  padding: 2% 15%;
+  margin: 5% 5%;
+  background-color: #00e6ac;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  margin: auto;
+  background-color: white;
+}
+
+.card:hover {
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+#section-information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+#profile-description p {
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+  text-align: justify;
+}
+
+h3 {
+  color: white;
+  font-size: 24px;
+}
+
+#experience-icons {
+  color: white;
+  font-size: 22px;
+}
+
+#name {
+  font-size: 30px;
+}
+
+#section-icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30%;
+}
+
+.card-icons {
+  font-size: 48px;
+}
+
+@media screen and (min-width: 1201px) {
+  article.profile-content {
+    height: 100%;
+  }
+
+  .card {
+    width: 400px;
+  }
+
+  #profile-description {
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  article.profile-content {
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  
+  #about-me {
+    padding: 2% 5%;
+    margin: 2% 2%;
+    display: block;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
