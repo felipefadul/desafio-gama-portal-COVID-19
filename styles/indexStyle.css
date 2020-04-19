@@ -59,6 +59,10 @@ p {
   height: 100%;
 }
 
+img {
+  width: 100%;
+}
+
 .auto-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
@@ -84,6 +88,10 @@ h2 {
   p {
     font-size: 17px;
   }
+
+  audio {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -102,5 +110,9 @@ h2 {
 
   p {
     font-size: 15px;
+  }
+
+  audio {
+    width: 100%;
   }
 }
